@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+		<title>Sign In</title>
+	</head>
+	<body class="centered-body bgs">
+		<div class="container  ">
+			{% include 'includes/alert.html' %}
+			<div class="row justify-content-center text-center align-items-center">
+				<div class="col-md-12 col-lg-6  form-container bg-white p-4 mt-5">
+					<h2 class="text-center mb-4">Sign In</h2>
+					<form class="signIn-form" method="post" accept="/signIn">
+						<div class="form-floating mb-3">
+							<input type="email" class="form-control" required name="username" id="floatingInput" placeholder="name@example.com">
+							<label for="floatingInput">Username</label>
+						  </div>
+						  <div class="form-floating">
+							<input type="password" class="form-control mb-2" required name="password" id="floatingPassword" placeholder="Password">
+							<label for="floatingPassword">Password</label>
+						  </div>
+						<button type="submit" class="btn btn-warning w-100">Sign In</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/close-all-alerts.js') }}"></script>
+	</body>		
+		<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/close-all-alerts.js') }}"></script>
+	</body>
+</html>

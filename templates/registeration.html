@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+		<title>Register</title>
+	</head>
+	<body>
+		<div class="container ">
+			{% include 'includes/alert.html' %}
+			<h1 class="text-info text-center">Books Website</h1>
+			<img src="res.png" class="w-100" alt="">
+		
+			<div class="container">		
+				   <form class="form-container" method="post" action="/registeration" >
+					  <div class="row">
+				   <div class="col-md-6 form-floating">
+					 <input type="text" placeholder="First Name.." id="floatingInput" required class="form-control mb-4 as border-2">
+					 <label for="floatingInput" class="mx-2">First Name</label>
+
+				   </div>
+				   <div class="col-md-6 form-floating">
+					<input type="text" placeholder="Last Name.."  id="floatingInput" required class="form-control mb-4 as border-2">
+					<label for="floatingInput" class="mx-2">Last Name</label>
+
+				  </div>
+
+				   <div class="col-md-6 form-floating">
+					 <input type="email" placeholder="Email.." id="floatingInput" required class="form-control as mb-4 border-2" >
+					 <label for="floatingInput"class="mx-2">Email address</label>
+
+				   </div>
+				   <div class="col-md-6 form-floating">
+					 <input type="text" placeholder="Password.." id="floatingInput" required name="password"class="form-control as border-2 mb-4">
+					 <label for="floatingInput"class="mx-2">Password</label>
+				   </div>
+				   <div class="col-md-12 form-floating">
+					<input type="text" placeholder=" User Name.."  id="floatingInput" required name="username"  class="form-control as border-2 mb-4">
+					<label for="floatingInput"class="mx-2">User Name</label>
+				  </div>
+				   <div class="text-center">
+				   <button type="submit" class="btn rounded btn-lg btn-primary ms-auto  " id="bbbs">Register</button>
+				   </div>
+					  </div>
+					</form>
+				 </div>
+		
+		 </div>
+		<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/close-all-alerts.js') }}"></script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+	background-color: beige;
+	min-height: 100vh;
+	margin: 0;
+}
+/* .centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+} */
+/* .form-container {
+	background-color: #f8f8f8;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+} */
+
+#bbbs{
+	border-radius: 100vh !important;
+	transition: .5s ease;
+	background-color: hotpink !important;
+	border-color: hotpink !important;
+	width:-moz-fit-content;
+	width: fit-content;
+
+  }
+  #bbbs:hover{
+	background-color: blueviolet;
+  }
+
+  .as:focus{
+    border-color: hotpink !important;
+    box-shadow: none !important;
+  }
+ .container{
+	margin-top: 200px;
+ }
+ .bgs{
+	background-color:#ee576b;
+ }
+ 
+ textarea {
+	min-height: 30px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 1.1;
+	resize: none; 
+  }
