@@ -1,2 +1,2 @@
 
-Basic Python/Flask web Application with a basic UI with applied security principles
+Basic Python/Flask web Application with a Simple UI with applied security principles
